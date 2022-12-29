@@ -19,7 +19,7 @@ $cursos = $repositorioDeCursos->findAll();
         <div class="jumbotron">
             <h1>Listar cursos</h1>
         </div>
-        <a href="/novo-curso" class="btn btn-primary mb-2">
+        <a href="/public/novo-curso" class="btn btn-primary mb-2">
             Novo curso
         </a>
         <ul class="list-group">
