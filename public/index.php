@@ -16,6 +16,8 @@ switch ($_SERVER['PATH_INFO']) {
     $controlador->processaRequisicao();
     break;
   default:
-    echo "Erro 404";
+    $controlador = new ListCoursesController();
+    $controlador->processaRequisicao();
+    // echo "Erro 404";
     break;
 }
