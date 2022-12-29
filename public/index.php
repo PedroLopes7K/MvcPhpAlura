@@ -1,15 +1,19 @@
 <?php
 
-// fazer log de todas as requisições
-// echo "<pre>";
-// var_dump($_SERVER['PATH_INFO']);
-// echo "</pre>";
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use Alura\Cursos\Controller\CreateCourseController;
+use Alura\Cursos\Controller\ListCoursesController;
+
 switch ($_SERVER['PATH_INFO']) {
   case '/listar-cursos':
-    require 'listar-cursos.php';
+    $controlador = new ListCoursesController();
+    $controlador->processaRequisicao();
     break;
   case '/novo-curso':
-    require 'formulario-novo-curso.php';
+    $controlador = new CreateCourseController();
+    $controlador->processaRequisicao();
     break;
   default:
     echo "Erro 404";
