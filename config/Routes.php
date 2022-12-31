@@ -6,6 +6,7 @@ use Pedro\Cursos\Controller\InsertCourseController;
 use Pedro\Cursos\Controller\DeleteCourseController;
 use Pedro\Cursos\Controller\FormLoginController;
 use Pedro\Cursos\Controller\LoginController;
+use Pedro\Cursos\Controller\LogoutController;
 use Pedro\Cursos\Controller\UpdateCourseController;
 
 return [
@@ -16,4 +17,5 @@ return [
   '/alterar-curso' => UpdateCourseController::class,
   '/login' => FormLoginController::class,
   '/realiza-login' => LoginController::class,
+  '/logout' => LogoutController::class,
 ];

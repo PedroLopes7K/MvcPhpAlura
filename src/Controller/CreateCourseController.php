@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\Cursos\Controller;
+namespace Pedro\Cursos\Controller;
 
 class CreateCourseController extends HtmlController implements InterfaceRequestController
 {
