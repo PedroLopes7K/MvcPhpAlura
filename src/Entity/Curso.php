@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\Cursos\Entity;
+namespace Pedro\Cursos\Entity;
 
 /**
  * @Entity

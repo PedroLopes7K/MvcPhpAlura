@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\Cursos\Controller;
+namespace Pedro\Cursos\Controller;
 
 interface InterfaceRequestController
 {

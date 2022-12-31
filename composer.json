@@ -1,7 +1,7 @@
 {
     "autoload": {
         "psr-4": {
-            "Alura\\Cursos\\": "src/"
+            "Pedro\\Cursos\\": "src/"
         }
     },
     "require": {

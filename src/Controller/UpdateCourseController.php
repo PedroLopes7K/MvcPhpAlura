@@ -1,9 +1,9 @@
 <?php
 
-namespace Alura\Cursos\Controller;
+namespace Pedro\Cursos\Controller;
 
-use Alura\Cursos\Entity\Curso;
-use Alura\Cursos\Infra\EntityManagerCreator;
+use Pedro\Cursos\Entity\Curso;
+use Pedro\Cursos\Infra\EntityManagerCreator;
 
 class UpdateCourseController extends HtmlController implements InterfaceRequestController
 {

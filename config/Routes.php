@@ -1,10 +1,12 @@
 <?php
 
-use Alura\Cursos\Controller\CreateCourseController;
-use Alura\Cursos\Controller\ListCoursesController;
-use Alura\Cursos\Controller\InsertCourseController;
-use Alura\Cursos\Controller\DeleteCourseController;
-use Alura\Cursos\Controller\UpdateCourseController;
+use Pedro\Cursos\Controller\CreateCourseController;
+use Pedro\Cursos\Controller\ListCoursesController;
+use Pedro\Cursos\Controller\InsertCourseController;
+use Pedro\Cursos\Controller\DeleteCourseController;
+use Pedro\Cursos\Controller\FormLoginController;
+use Pedro\Cursos\Controller\LoginController;
+use Pedro\Cursos\Controller\UpdateCourseController;
 
 return [
   '/listar-cursos' => ListCoursesController::class,
@@ -12,4 +14,6 @@ return [
   '/salvar-curso' => InsertCourseController::class,
   '/excluir-curso' => DeleteCourseController::class,
   '/alterar-curso' => UpdateCourseController::class,
+  '/login' => FormLoginController::class,
+  '/realiza-login' => LoginController::class,
 ];
