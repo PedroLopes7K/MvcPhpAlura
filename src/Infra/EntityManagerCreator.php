@@ -1,6 +1,6 @@
 <?php
 
-namespace Pedro\Cursos\Infra;
+namespace Alura\Cursos\Infra;
 
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;

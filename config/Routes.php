@@ -1,21 +1,26 @@
 <?php
 
-use Pedro\Cursos\Controller\CreateCourseController;
-use Pedro\Cursos\Controller\ListCoursesController;
-use Pedro\Cursos\Controller\InsertCourseController;
-use Pedro\Cursos\Controller\DeleteCourseController;
-use Pedro\Cursos\Controller\FormLoginController;
-use Pedro\Cursos\Controller\LoginController;
-use Pedro\Cursos\Controller\LogoutController;
-use Pedro\Cursos\Controller\UpdateCourseController;
+use Alura\Cursos\Controller\{CursosEmJson,
+    CursosEmXml,
+    Deslogar,
+    Exclusao,
+    FormularioEdicao,
+    FormularioInsercao,
+    FormularioLogin,
+    ListarCursos,
+    Persistencia,
+    RealizarLogin};
 
 return [
-  '/listar-cursos' => ListCoursesController::class,
-  '/novo-curso' => CreateCourseController::class,
-  '/salvar-curso' => InsertCourseController::class,
-  '/excluir-curso' => DeleteCourseController::class,
-  '/alterar-curso' => UpdateCourseController::class,
-  '/login' => FormLoginController::class,
-  '/realiza-login' => LoginController::class,
-  '/logout' => LogoutController::class,
+    '/listar-cursos' => ListarCursos::class,
+    '/novo-curso' => FormularioInsercao::class,
+    '/salvar-curso' => Persistencia::class,
+    '/excluir-curso' => Exclusao::class,
+    '/alterar-curso' => FormularioEdicao::class,
+    '/login' => FormularioLogin::class,
+    '/realiza-login' => RealizarLogin::class,
+    '/logout' => Deslogar::class,
+    '/buscarCursosEmJson' => CursosEmJson::class,
+    '/buscarCursosEmXml' => CursosEmXml::class
 ];
+
